@@ -1,0 +1,252 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/bg-photo.jpg);
+    background-position: top;
+    background-size: cover;
+    color: #E2E2E2;
+  }
+  
+  hr {
+    border: 0.5px solid white;
+  }
+  
+  .container-fluid {
+    padding: 20px 0;
+  }
+  
+  /* ----- Navbar ----- */
+  .navbar-dark {
+    background-color: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: none;
+  }
+  
+  .logo:hover {
+    -webkit-transform: scale(.92);
+    transform: scale(.92);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  
+  .nav-link:link,
+  .nav-link:visited {
+    border-bottom: 4px solid transparent;
+    font-size: 20px;
+  }
+  
+  .nav-link:hover {
+    border-bottom: 4px double #E2E2E2;
+    -webkit-transition: border-bottom 0.2s ease-in-out;
+    transition: border-bottom 0.2s ease-in-out;
+  }
+  
+  .js-sticky {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(35, 109, 203, 0.98);
+    box-shadow: 0 2px 2px #2E2E2E;
+    z-index: 9999;
+  }
+  
+  .js-sticky .nav-link:hover {
+    border-bottom: 4px double #001989;
+  }
+  
+  #dwnld-res {
+    font-size: 16px;
+  }
+  
+  #dwnld-res a:link,
+  #dwnld-res a:visited {
+    color: #E2E2E2;
+  }
+  
+  .dwnld {
+    font-size: 28px;
+    border: 2px solid #E2E2E2;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 2px;
+  }
+  
+  .dwnld:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: border 0.3s, -webkit-transform 0.3s;
+    transition: border 0.3s, transform 0.3s;
+  }
+  
+  /* ----- Intro ----- */
+  .name-bar,
+  .skills,
+  .contact {
+    background-color: #236DCB;
+  }
+  
+  .name {
+    font-size: 56px;
+    font-weight: 300;
+  }
+  
+  .fname {
+    font-weight: 400;
+    font-weight: bold;
+    color: #001989;
+  }
+  
+  /* ----- About ----- */
+  .profile-pic {
+    width: inherit;
+    height: auto;
+    border-radius: 10px;
+    border: double 5px #E2E2E2;
+  }
+
+  .table-pic {
+    width: 429px;
+    height: 220px;
+    border-radius: 5px;
+    border: double 2px #E2E2E2;
+  }
+  
+  .about-text {
+    font-size: 95%;
+  }
+  
+  .quotebox {
+    border: 5px double #E2E2E2;
+    margin: auto;
+    border-radius: 10px;
+  }
+  
+  .quotebox:hover {
+    background-color: #001989;
+    box-shadow: 3px 3px 4px gray;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: background-color 0.3s, box-shadow 0.3s, -webkit-transform 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  }
+  
+  .quote {
+    font-size: 24px;
+    font-weight: 200;
+  }
+  
+  /* ----- Skill Highlights ----- */
+  .skill {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid #EEE;
+    border-radius: 20px;
+    width: 120px;
+    display: inline-block;
+  }
+  
+  .skill:hover {
+    background-color: #001989;
+    border: 1px solid #001989;
+    box-shadow: 0px 3px 2px 2px #2E2E2E;
+    -webkit-transform: scale(1.05);
+    transform:scale(1.05);
+    -webkit-transition: background-color 0.3s, border 0.3s, box-shadow 0.3s, -webkit-transform 0.3s;
+    transition: background-color 0.3s, border 0.3s, box-shadow 0.3s, transform 0.3s;
+  }
+  
+  /* ----- Projects ----- */
+  
+  /* ----- Contact ----- */
+  #contact a:link,
+  #contact a:visited {
+    color: #E2E2E2;
+  }
+  
+  .linkedin,
+  .github,
+  .email {
+    font-size: 28px;
+    border: 2px solid #E2E2E2;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  .linkedin:hover,
+  .github:hover,
+  .email:hover {
+    text-decoration: none;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: border 0.3s, -webkit-transform 0.3s;
+    transition: border 0.3s, transform 0.3s;
+  }
+  
+  /* ----- Footer ----- */
+  .footer-text {
+    padding: 0 10px;
+    float: right;
+  }
+
+  /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 150px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 30px; /* Place content 60px from the top */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+.screen-large{
+    display: inline;
+}
+
+.screen-small{
+    display:none;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 950px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .sidenav {width:0px;}
+    .navbar-dark {display: inline;}
+    .screen-large {display:none;}
+    .screen-small {display: inline;}
+}
